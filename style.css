@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.item {
+    border: 2px solid lightcoral;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item p
+{
+    text-align: center;
+}
+.item img {
+    width: 75%;
+    border-radius: 50%;
+}
+
+/* responcive css via midia qury */
+@media screen and (max-width:430px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width:430px) and (max-width:720px) {
+    .container
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
